@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Centered Logo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon</title>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      width: 100%;
-      min-height: 100vh;
-    }
     body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      margin: 0;
+      background-color: white;
       height: 100vh;
-      width: 100vw;
+      position: relative;
+      font-family: sans-serif;
     }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
     .logo {
-      width: 900px;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      max-width: 200px;
+      height: auto;
     }
-    .logo img {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
+
+    .coming-soon {
+      position: absolute;
+      top: calc(50% + 25%); /* 75% of the way from bottom to center */
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 1.25rem;
+      color: #1073CF;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
+  <div class="container">
     <img src="https://github.com/shanewestra/gl-mark-web-public/blob/main/blue512h.png?raw=true" alt="Genlocker Logo">
   </div>
+  <div class="coming-soon">Coming soon</div>
 </body>
 </html>
